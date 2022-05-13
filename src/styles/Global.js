@@ -8,13 +8,25 @@ export const GlobalStyles = createGlobalStyle`
   margin: 0;
 }
 body {
+  margin: auto;
   background-image: repeating-linear-gradient(180deg,rgba(164, 205, 215, 0) 0%, #3C789E);
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.15em;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
   scroll-behavior: smooth;
 }
 `;
+
+export const theme = {
+  colors: {
+    primary: "#d9248f",
+    warning: "#FF0000",
+    text: "#174C6F",
+    body: "#fff",
+    cards: "rgba(255, 255, 255, 0.8)",
+  },
+};
