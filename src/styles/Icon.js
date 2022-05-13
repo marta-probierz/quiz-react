@@ -9,9 +9,10 @@ export const QuestionMark = styled.img.attrs({
   flex-direction: row;
   justify-content: space-between;
   width: 250px;
-  margin: 30px;
+  margin: 15px;
 
   @media (min-width: 700px) {
     width: 300px;
+    margin: 20px;
   }
 `;

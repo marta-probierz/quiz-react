@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
@@ -8,9 +8,11 @@ export const Button = styled.button`
   height: 40px;
   width: 200px;
   font-size: 20px;
-  line-height: 24px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.body || "#FFFFFF"};
+  letter-spacing: 2.5px;
+  margin-top: 20px;
+  align-self: center;
+  color: ${({ theme }) => theme.colors.body || '#FFFFFF'};
   @media (min-width: 700px) {
     height: 45px;
     width: 250px;

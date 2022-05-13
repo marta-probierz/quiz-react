@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100vw;
@@ -20,14 +20,14 @@ export const LinkButton = styled(Link)`
   display: block;
   width: 100%;
   height: 100%;
-  color: ${({ theme }) => theme.colors.body || "#fff"};
+  color: ${({ theme }) => theme.colors.body || '#fff'};
   line-height: 36px;
   text-decoration: none;
 `;
 
 export const Header = styled.h1`
   margin: 80px 0 20px;
-  color: ${({ theme }) => theme.colors.text || "#174C6F"};
+  color: ${({ theme }) => theme.colors.text || '#174C6F'};
   font-weight: 400;
   line-height: 21px;
   text-align: center;
@@ -35,6 +35,28 @@ export const Header = styled.h1`
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 
   @media (min-width: 700px) {
-    font-size: 2.5em
+    font-size: 2.5em;
   }
+`;
+
+export const Foot = styled.div`
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 5px;
+  }
+`;
+
+export const ErrorMsg = styled.div`
+  color: ${({ theme }) => theme.colors.warning || '#FF0000'};
+  align-self: flex-start;
+  font-size: 12px;
+  margin-left: 10px;
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 `;
