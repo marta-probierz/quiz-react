@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Input } from '../styles/Input'; 
+import { Input } from '../styles';
 
 export const FormInput = (props) => {
   const [focused, setFocused] = useState(false);

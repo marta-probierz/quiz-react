@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { paths } from '../config';
 import { Container, InfoBox, AnswersBox, Answers, Question, Amount, Button, ButtonsBox, LinkButton } from '../styles';
 
-export const Questions = ({
-  currentQuestion,
-  setCurrentQuestion,
-  questions,
-  answers,
-  correct,
-  score,
-  setScore
-}) => {
+export const Questions = ({ currentQuestion, setCurrentQuestion, questions, answers, correct, score, setScore }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [selected, setSelected] = useState();
 
@@ -26,22 +20,24 @@ export const Questions = ({
     setSelected(e);
     if (e === correct) setScore(score + 1);
     if (currentQuestion <= 3) {
-    setTimeout(() => {
+      setTimeout(() => {
         setCurrentQuestion(currentQuestion + 1);
         setSelected();
-      }, 1000)
-      }
+      }, 1000);
+    }
   };
 
   const goToResult = () => {
     if (currentQuestion === 4) navigate(paths.result, { replace: true });
-  }
+  };
 
   return (
     <>
       <Container>
-        <Amount>Question {currentQuestion + 1}/5</Amount>
-
+        <Amount>
+          {t`components.questions.question`} {currentQuestion + 1}
+          {t`components.questions.amount`}
+        </Amount>
         <Question>{questions[currentQuestion].question}</Question>
         <InfoBox>
           <AnswersBox>
@@ -60,9 +56,11 @@ export const Questions = ({
         </InfoBox>
         <ButtonsBox>
           <Button>
-            <LinkButton to="/">I give up</LinkButton>
+            <LinkButton to="/">{t`components.questions.button-left`}</LinkButton>
           </Button>
-          <Button disabled={currentQuestion <= 3} onClick={() => goToResult()}>Result</Button>
+          <Button disabled={currentQuestion <= 3} onClick={() => goToResult()}>
+            {t`components.questions.button-right`}
+          </Button>
         </ButtonsBox>
       </Container>
     </>

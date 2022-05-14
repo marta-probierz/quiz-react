@@ -25,11 +25,9 @@ body {
 export const theme = {
   colors: {
     primary: '#d9248f',
-    warning: '#FF0000',
     valid: '#ADDB80',
     invalid: '#FF8888',
     text: '#174C6F',
     body: '#fff',
-    cards: 'rgba(255, 255, 255, 0.8)',
   },
 };

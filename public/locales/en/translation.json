@@ -1,0 +1,24 @@
+{
+  "homePage": {
+    "welcome": "Welcome to Quiz",
+    "start": "Start"
+  },
+  "quizPage": {
+    "header": "Let's go, "
+  },
+  "resultPage": {
+    "header": "Your score:",
+    "button": "Play again"
+  },
+  "components": {
+    "footer": {
+      "footer": "Made with \u2764\uFE0F for Bluerank by Marta Probierz"
+    },
+    "questions": {
+      "question": "Question ",
+      "amount": "/5",
+      "button-left": "I give up",
+      "button-right": "Result"
+    }
+  }
+}

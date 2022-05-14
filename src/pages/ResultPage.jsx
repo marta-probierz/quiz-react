@@ -1,10 +1,12 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { paths } from '../config';
 import { Container, Header, Button, LinkButton } from '../styles';
 
 export const ResultPage = ({ name, score }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,10 +17,10 @@ export const ResultPage = ({ name, score }) => {
 
   return (
     <Container>
-      <Header>Your score:</Header>
+      <Header>{t`resultPage.header`}</Header>
       <Header>{score}</Header>
       <Button>
-        <LinkButton to="/">Play again</LinkButton>
+        <LinkButton to="/">{t`resultPage.button`}</LinkButton>
       </Button>
     </Container>
   );

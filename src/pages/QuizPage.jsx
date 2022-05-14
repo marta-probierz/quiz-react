@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Loader, Questions } from '../components';
 import { Container, Header, InfoBox, Info } from '../styles';
 
 export const QuizPage = ({ name, questions, score, setScore }) => {
+  const { t } = useTranslation();
   const [answers, setAnswers] = useState();
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -15,13 +17,15 @@ export const QuizPage = ({ name, questions, score, setScore }) => {
   }, [currentQuestion, questions]);
 
   const handler = (e) => {
-    return e.sort(() => Math.random() * 7);
+    return e.sort(() => Math.random() - 0.5);
   };
 
   return (
     <>
       <Container>
-        <Header>Let's go, {name}</Header>
+        <Header>
+          {t`quizPage.header`} {name}
+        </Header>
         {questions ? (
           <>
             <InfoBox>

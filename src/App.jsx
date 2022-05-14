@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
@@ -24,7 +24,12 @@ export const App = () => {
         <Route
           path={paths.home}
           element={
-            <HomePage name={name} setName={setName} disabled={name.length < 3 || name.length > 16} fetchQuestions={fetchQuestions} />
+            <HomePage
+              name={name}
+              setName={setName}
+              disabled={name.length < 3 || name.length > 16}
+              fetchQuestions={fetchQuestions}
+            />
           }
         />
         <Route

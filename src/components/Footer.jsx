@@ -1,10 +1,9 @@
-import React from 'react'
-import { Foot } from "../styles/HomePage"
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { Foot } from '../styles';
 
 export const Footer = () => {
-  return (
-    <Foot>
-      Made with &#9829; for Bluerank by Marta Probierz
-    </Foot>
-  )
-}
+  const { t } = useTranslation();
+  return <Foot>{t`components.footer.footer`}</Foot>;
+};
