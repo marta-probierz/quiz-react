@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   align-content: center;
   scroll-behavior: smooth;
 }

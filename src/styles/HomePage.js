@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100vw;
-  padding-top: 50px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -26,7 +25,7 @@ export const LinkButton = styled(Link)`
 `;
 
 export const Header = styled.h1`
-  margin: 80px 0 20px;
+  margin-bottom: 20px;
   color: ${({ theme }) => theme.colors.text || '#174C6F'};
   font-weight: 400;
   line-height: 21px;
