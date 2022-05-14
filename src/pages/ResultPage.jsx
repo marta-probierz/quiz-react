@@ -1,9 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export const ResultPage = () => {
-  return (
-    <div>
-      result page
-    </div>
-  )
-}
+export const ResultPage = ({ name, score }) => {
+  return <div>result page</div>;
+};
