@@ -47,13 +47,6 @@ export const Foot = styled.div`
   }
 `;
 
-export const ErrorMsg = styled.div`
-  color: ${({ theme }) => theme.colors.warning || '#FF0000'};
-  align-self: flex-start;
-  font-size: 12px;
-  margin-left: 10px;
-`;
-
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
