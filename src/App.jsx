@@ -3,11 +3,9 @@ import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import { paths } from './config/path';
-import { GlobalStyles, theme } from './styles/Global';
-import { HomePage } from './pages/HomePage';
-import { QuizPage } from './pages/QuizPage';
-import { ResultPage } from './pages/ResultPage';
+import { paths } from './config';
+import { GlobalStyles, theme } from './styles';
+import { HomePage, QuizPage, ResultPage } from './pages';
 
 export const App = () => {
   const [name, setName] = useState('');
@@ -16,7 +14,7 @@ export const App = () => {
 
   const fetchQuestions = async () => {
     const data = await axios.get(`https://opentdb.com/api.php?amount=5`);
-    setQuestions(data.results);
+    setQuestions(data.data.results);
   };
 
   return (

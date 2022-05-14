@@ -1,14 +1,10 @@
 import React from 'react';
 // import { useTranslation } from "react-i18next";
-import { paths } from '../config/path';
 import { useNavigate } from 'react-router-dom';
 
-import { inputs } from '../config/inputs';
-import { FormInput } from '../components/Input';
-import { Button } from '../styles/Button';
-import { QuestionMark } from '../styles/Icon';
-import { Container, Header, Form } from '../styles/HomePage';
-import { Footer } from '../components/Footer';
+import { paths, inputs } from '../config';
+import { FormInput, Footer } from '../components';
+import { Button, QuestionMark, Container, Header, Form } from '../styles';
 
 export const HomePage = ({ name, setName, disabled, fetchQuestions }) => {
   // const { t } = useTranslation();
