@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Loader, Questions } from '../components';
 import { Container, Header, InfoBox, Info } from '../styles';
 
-export const QuizPage = ({ name, questions, score, setScore, setQuestions }) => {
+export const QuizPage = ({ name, questions, score, setScore }) => {
   const [answers, setAnswers] = useState();
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -15,18 +15,17 @@ export const QuizPage = ({ name, questions, score, setScore, setQuestions }) => 
   }, [currentQuestion, questions]);
 
   const handler = (e) => {
-    return e.sort(() => Math.random() - 0.5);
+    return e.sort(() => Math.random() * 7);
   };
 
   return (
     <>
       <Container>
-        <Header>Hello, {name}</Header>
+        <Header>Let's go, {name}</Header>
         {questions ? (
           <>
             <InfoBox>
               <Info>{questions[currentQuestion].category}</Info>
-              <Info>Score: {score}</Info>
             </InfoBox>
             <Questions
               currentQuestion={currentQuestion}
@@ -36,7 +35,6 @@ export const QuizPage = ({ name, questions, score, setScore, setQuestions }) => 
               correct={questions[currentQuestion]?.correct_answer}
               score={score}
               setScore={setScore}
-              setQuestions={setQuestions}
             />
           </>
         ) : (

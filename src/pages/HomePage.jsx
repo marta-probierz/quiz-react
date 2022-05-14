@@ -29,7 +29,7 @@ export const HomePage = ({ name, setName, disabled, fetchQuestions }) => {
           {inputs.map((input) => (
             <FormInput key={input.id} {...input} value={name} onChange={onChange} />
           ))}
-          <Button disabled={disabled}>Submit</Button>
+          <Button disabled={disabled}>Start</Button>
         </Form>
         <Footer />
       </Container>

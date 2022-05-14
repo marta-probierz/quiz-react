@@ -24,19 +24,12 @@ export const App = () => {
         <Route
           path={paths.home}
           element={
-            <HomePage
-              name={name}
-              setName={setName}
-              disabled={name.length < 3 ? true : false}
-              fetchQuestions={fetchQuestions}
-            />
+            <HomePage name={name} setName={setName} disabled={name.length < 3 || name.length > 16} fetchQuestions={fetchQuestions} />
           }
         />
         <Route
           path={paths.quiz}
-          element={
-            <QuizPage name={name} questions={questions} score={score} setScore={setScore} setQuestions={setQuestions} />
-          }
+          element={<QuizPage name={name} questions={questions} score={score} setScore={setScore} />}
         />
         <Route path={paths.result} element={<ResultPage name={name} score={score} />} />
       </Routes>

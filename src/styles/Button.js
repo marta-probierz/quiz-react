@@ -6,13 +6,14 @@ export const Button = styled.button`
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   height: 40px;
-  width: 200px;
+  width: 150px;
   font-size: 20px;
   text-align: center;
   letter-spacing: 2.5px;
   margin-top: 20px;
   align-self: center;
   color: ${({ theme }) => theme.colors.body || '#FFFFFF'};
+  cursor: pointer;
   @media (min-width: 700px) {
     height: 45px;
     width: 250px;
