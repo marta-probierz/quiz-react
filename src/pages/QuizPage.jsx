@@ -30,6 +30,7 @@ export const QuizPage = ({ name, questions, score, setScore }) => {
           <>
             <InfoBox>
               <Info>{questions[currentQuestion].category}</Info>
+              <Info>{questions[currentQuestion].difficulty}</Info>
             </InfoBox>
             <Questions
               currentQuestion={currentQuestion}

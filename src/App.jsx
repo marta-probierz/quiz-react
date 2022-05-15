@@ -36,7 +36,7 @@ export const App = () => {
           path={paths.quiz}
           element={<QuizPage name={name} questions={questions} score={score} setScore={setScore} />}
         />
-        <Route path={paths.result} element={<ResultPage name={name} score={score} />} />
+        <Route path={paths.result} element={<ResultPage name={name} score={score} setScore={setScore} />} />
       </Routes>
     </ThemeProvider>
   );

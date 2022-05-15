@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { paths } from '../config';
-import { Container, Header, Button, LinkButton } from '../styles';
+import { Container, Header, Button, LinkButton, ButtonsBox } from '../styles';
 
-export const ResultPage = ({ name, score }) => {
+export const ResultPage = ({ name, score, setScore }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -15,13 +15,24 @@ export const ResultPage = ({ name, score }) => {
     }
   }, [name, navigate]);
 
+  const hadleChange = () => {
+    setScore(0);
+  };
+
   return (
     <Container>
-      <Header>{t`resultPage.header`}</Header>
+      <Header>{t`resultPage.correct`}</Header>
       <Header>{score}</Header>
-      <Button>
-        <LinkButton to="/">{t`resultPage.button`}</LinkButton>
-      </Button>
+      <Header>{t`resultPage.incorrect`}</Header>
+      <Header>{5 - score}</Header>
+      <ButtonsBox>
+        <Button>
+          <LinkButton to="/">{t`resultPage.button-left`}</LinkButton>
+        </Button>
+        <Button>
+          <LinkButton onClick={hadleChange} to="/quiz">{t`resultPage.button-right`}</LinkButton>
+        </Button>
+      </ButtonsBox>
     </Container>
   );
 };

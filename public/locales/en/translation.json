@@ -7,8 +7,10 @@
     "header": "Let's go, "
   },
   "resultPage": {
-    "header": "Your score:",
-    "button": "Play again"
+    "correct": "Your score:",
+    "incorrect": "Incorrect:",
+    "button-left": "Home",
+    "button-right": "Play again"
   },
   "components": {
     "footer": {
