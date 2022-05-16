@@ -5,3 +5,4 @@ export * from './Icon';
 export * from './Input';
 export * from './Loader';
 export * from './QuizPage';
+export * from './SelectInput';

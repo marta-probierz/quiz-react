@@ -24,7 +24,7 @@ export const QuizPage = ({ name, questions, score, setScore }) => {
     <>
       <Container>
         <Header>
-          {t`quizPage.header`} {name}
+          {t`quizPage.header`} {name}!
         </Header>
         {questions ? (
           <>

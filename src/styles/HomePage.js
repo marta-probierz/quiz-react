@@ -25,7 +25,7 @@ export const LinkButton = styled(Link)`
 `;
 
 export const Header = styled.h1`
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: ${({ theme }) => theme.colors.text || '#174C6F'};
   font-weight: 400;
   text-align: center;

@@ -17,6 +17,7 @@
       "footer": "Made with \u2764\uFE0F for Bluerank by Marta Probierz"
     },
     "questions": {
+      "select": "Choose a question",
       "question": "Question ",
       "amount": "/5",
       "button-left": "I give up",

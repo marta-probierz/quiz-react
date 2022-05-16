@@ -1,22 +1,13 @@
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import { paths } from '../config';
 import { Container, Header, Button, LinkButton, ButtonsBox } from '../styles';
 
-export const ResultPage = ({ name, score, setScore }) => {
+export const ResultPage = ({ score, setScore, fetchQuestions }) => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!name) {
-      navigate(paths.home, { replace: true });
-    }
-  }, [name, navigate]);
 
   const hadleChange = () => {
     setScore(0);
+    fetchQuestions();
   };
 
   return (

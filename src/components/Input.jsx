@@ -1,24 +1,7 @@
-import { useState } from 'react';
-
 import { Input } from '../styles';
 
 export const FormInput = (props) => {
-  const [focused, setFocused] = useState(false);
   const { onChange, id, ...inputProps } = props;
 
-  const handleFocus = (e) => {
-    setFocused(true);
-  };
-
-  return (
-    <div>
-      <Input
-        {...inputProps}
-        onChange={onChange}
-        onBlur={handleFocus}
-        onFocus={() => setFocused(true)}
-        focused={focused}
-      />
-    </div>
-  );
+  return <Input {...inputProps} onChange={onChange} />;
 };

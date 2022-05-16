@@ -3,12 +3,24 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { paths } from '../config';
-import { Container, InfoBox, AnswersBox, Answers, Question, Amount, Button, ButtonsBox, LinkButton } from '../styles';
+import {
+  Container,
+  InfoBox,
+  AnswersBox,
+  Answers,
+  Question,
+  Amount,
+  Button,
+  ButtonsBox,
+  LinkButton,
+  SelectInput,
+} from '../styles';
 
 export const Questions = ({ currentQuestion, setCurrentQuestion, questions, answers, correct, score, setScore }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [selected, setSelected] = useState();
+  const allQuestions = [];
 
   const handleSelect = (e) => {
     if (selected === e && selected === correct) return 'selected';
@@ -31,13 +43,32 @@ export const Questions = ({ currentQuestion, setCurrentQuestion, questions, answ
     if (currentQuestion === 4) navigate(paths.result, { replace: true });
   };
 
+  questions.forEach((e) => {
+    return allQuestions.push(e.question);
+  });
+
+  const que = allQuestions.map((e) => e);
+
+  const onChangeInput = (value) => {
+    setCurrentQuestion(value.value);
+  };
+
   return (
     <>
       <Container>
+        <SelectInput
+          name="questionsList"
+          options={que.map((e, i) => ({ label: e, value: i }))}
+          classNamePrefix={'Select'}
+          placeholder={t`components.questions.select`}
+          id="questionsList"
+          onChange={onChangeInput}
+        />
         <Amount>
           {t`components.questions.question`} {currentQuestion + 1}
           {t`components.questions.amount`}
         </Amount>
+
         <Question>{questions[currentQuestion].question}</Question>
         <InfoBox>
           <AnswersBox>
