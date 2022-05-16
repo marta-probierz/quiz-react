@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100vw;
@@ -15,17 +14,8 @@ export const Container = styled.div`
   }
 `;
 
-export const LinkButton = styled(Link)`
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: ${({ theme }) => theme.colors.body || '#fff'};
-  line-height: 36px;
-  text-decoration: none;
-`;
-
 export const Header = styled.h1`
-  margin-bottom: 20px;
+  margin: 15px 0;
   color: ${({ theme }) => theme.colors.text || '#174C6F'};
   font-weight: 400;
   text-align: center;
@@ -34,6 +24,7 @@ export const Header = styled.h1`
 
   @media (min-width: 700px) {
     font-size: 2.5em;
+    margin: 20px 0;
   }
 `;
 

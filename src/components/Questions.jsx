@@ -24,8 +24,8 @@ export const Questions = ({ currentQuestion, setCurrentQuestion, questions, answ
 
   const handleSelect = (e) => {
     if (selected === e && selected === correct) return 'selected';
-    else if (selected === e && selected !== correct) return 'wrong';
-    else if (e === correct) return 'selected';
+    if (selected === e && selected !== correct) return 'wrong';
+    if (e === correct) return 'selected';
   };
 
   const handleCheck = (e) => {

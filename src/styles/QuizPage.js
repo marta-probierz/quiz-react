@@ -94,11 +94,3 @@ export const Answers = styled.button`
     }
   }
 `;
-
-export const ButtonsBox = styled.div`
-  display: flex;
-  gap: 15px;
-  @media (min-width: 700px) {
-    gap: 30px;
-  }
-`;

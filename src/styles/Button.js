@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
@@ -28,4 +29,22 @@ export const Button = styled.button`
     background-color: #cccccc;
     color: #666666;
   }
+`;
+
+export const ButtonsBox = styled.div`
+  display: flex;
+  padding-bottom: 20px;
+  gap: 15px;
+  @media (min-width: 700px) {
+    gap: 30px;
+  }
+`;
+
+export const LinkButton = styled(Link)`
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: ${({ theme }) => theme.colors.body || '#fff'};
+  line-height: 36px;
+  text-decoration: none;
 `;
