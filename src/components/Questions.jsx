@@ -40,7 +40,7 @@ export const Questions = ({ currentQuestion, setCurrentQuestion, questions, answ
   };
 
   const goToResult = () => {
-    if (currentQuestion === 4) navigate(paths.result, { replace: true });
+    if (currentQuestion === 4 && currentQuestion[4] !== selected) navigate(paths.result, { replace: true });
   };
 
   questions.forEach((e) => {

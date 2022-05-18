@@ -14,8 +14,6 @@ export const ResultPage = ({ score, setScore, fetchQuestions }) => {
     <Container>
       <Header>{t`resultPage.correct`}</Header>
       <Header>{score}</Header>
-      <Header>{t`resultPage.incorrect`}</Header>
-      <Header>{5 - score}</Header>
       <ButtonsBox>
         <Button>
           <LinkButton to="/">{t`resultPage.button-left`}</LinkButton>
