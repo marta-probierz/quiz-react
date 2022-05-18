@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Quiz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![questionMark-kopia](https://user-images.githubusercontent.com/75137091/169051033-6772f25d-fc66-44f8-a69c-13e4943053cd.png)
 
-## Available Scripts
+### [ZAGRAJ](https://quizreactmp.netlify.app)
 
-In the project directory, you can run:
+#### Autorka:
 
-### `yarn start`
+- [Marta Probierz](https://github.com/marta-probierz)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cel projektu
+Celem projektu było dostarczenie aplikacji „Quiz” pozwalającej użytkownikom na sprawdzenie swojej wiedzy z losowo wybranych kategorii.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Działanie aplikacji
 
-### `yarn test`
+### Strona główna
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Quiz
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Wynik gry
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API
+https://opentdb.com/api.php?amount=5
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dodatkowe informacje
+1. Aplikacja została wdrożona na Netlify.
+2. Została zrealizowana responsywność stron.
+3. Została również użyta biblioteka Prettier, służącej do formatowania kodu. Niniejsza biblioteka jest świetnym narzędziem, który wyłapuje błędy składni, automatycznie poprawia linie kodu według zdefiniowanej konfiguracji.
 
-## Learn More
+## Technologie użyte w projekcie:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Narzędzia pomocnicze
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Instalacja
 
-### Making a Progressive Web App
+#### Uruchomienie projektu:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Aby uruchomić aplikację na lokalnej maszynie, wykonaj następujące kroki:
 
-### Advanced Configuration
+1. Sklonuj repozytorium.
+2. Otwórz je w ulubionym edytorze.
+3. Zainstaluj zależności za pomocą komendy: yarn.
+4. Wystartuj serwer za pomocą komendy: yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Aplikacja będzie dostępna pod adresem: http://localhost:3000/
