@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const Header = styled.h1`
   margin: 15px 0;
   color: ${({ theme }) => theme.colors.text || '#174C6F'};
-  font-weight: 400;
+  font-weight: 800;
   text-align: center;
   letter-spacing: 2px;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
