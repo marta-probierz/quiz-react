@@ -23,6 +23,12 @@ Celem projektu było dostarczenie aplikacji „Quiz” pozwalającej użytkownik
 ### Wynik gry
 
 
+## Responsywność
+W projekcie została zrealizowana responsywność stron.
+
+![10](https://user-images.githubusercontent.com/75137091/169072735-ed7d219d-c1de-4890-8486-6c72437591ad.jpg)
+![11](https://user-images.githubusercontent.com/75137091/169072748-99201f5b-4132-444c-a65f-0330d8db3108.jpg)
+![12](https://user-images.githubusercontent.com/75137091/169072759-1b78ce10-8531-4626-bcc1-7041cc39ddae.jpg)
 
 
 ## API
@@ -30,16 +36,18 @@ https://opentdb.com/api.php?amount=5
 
 ## Dodatkowe informacje
 1. Aplikacja została wdrożona na Netlify.
-2. Została zrealizowana responsywność stron.
 3. Została również użyta biblioteka Prettier, służącej do formatowania kodu. Niniejsza biblioteka jest świetnym narzędziem, który wyłapuje błędy składni, automatycznie poprawia linie kodu według zdefiniowanej konfiguracji.
 
 ## Technologie użyte w projekcie:
-
-
+1. JSX
+2. react
+3. axios
+4. i18next
+5. styled-components
 
 ## Narzędzia pomocnicze
-
-
+1. Visual Studio Code
+2. Yarn
 
 ## Instalacja
 
