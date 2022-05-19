@@ -41,7 +41,7 @@ W aplikacji została zrealizowana walidacja odpowiedzi. W momencie, gdy użytkow
 
 ![7](https://user-images.githubusercontent.com/75137091/169131799-13ba12eb-c254-4697-ad61-7dec3eeafc6b.png)
 
-Po dotarciu do ostatniego pytania i wybraniu odpowiedź, przycisk Result staje się aktywny. Gracz może w niego kliknąć, po czym zostanie przeniesiony do wyniku gry.
+Po dotarciu do ostatniego pytania i wybraniu odpowiedzi, przycisk Result staje się aktywny. Gracz może w niego kliknąć, po czym zostanie przeniesiony do wyniku gry.
 
 ![8](https://user-images.githubusercontent.com/75137091/169132705-22dabb1e-cd8b-407c-a0df-ba54f0979ea4.png)
 
