@@ -15,13 +15,14 @@ Celem projektu było dostarczenie aplikacji „Quiz” pozwalającej użytkownik
 
 Na stronie głównej znajduje się widok przywitania użytkownika, logo, pole, do którego należy wpisać swoje imię, a także przycisk rozpoczynający grę. Przycisk pozostaje nieaktywny do momentu wprowadzenia imienia przez gracza. 
 
-![1](https://user-images.githubusercontent.com/75137091/169090712-c8184730-6452-43ad-9c40-49e5b8052c1e.png)
+![1](https://user-images.githubusercontent.com/75137091/173678453-eb0f5a18-39e5-43e5-a0e2-52e766dbc92c.png)
 
 Dodatkowo została zrealizowana walidacja - pole zmienia swój kolor oraz grafikę w momencie wpisania niepoprawnych lub poprawnych danych. Imię gracza powinno posiadać minimum 3 znaki.
 
-![2](https://user-images.githubusercontent.com/75137091/169090751-11615973-7b86-4eb2-8fbf-ec9a2c9981f2.png)
+![2](https://user-images.githubusercontent.com/75137091/173678489-4d314bb4-3918-4c40-9123-1cc8e04c5507.png)
 
-![3](https://user-images.githubusercontent.com/75137091/169090768-b1758643-8bf3-4194-819a-fb63b0d1e69d.png)
+
+![3](https://user-images.githubusercontent.com/75137091/173678502-fe45b4fe-0e67-480f-901f-7d175e4b99f3.png)
 
 Po wpisaniu imienia, użytkownik zostaje przeniesiony na stronę quizu. Podczas ładowania pytań, gracz może zauważyć napis Let's go wraz ze swoim imieniem oraz loader.
 
